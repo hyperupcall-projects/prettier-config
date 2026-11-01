@@ -31,13 +31,13 @@
 		"typecheck": "tsc --project ./jsconfig.json"
 	},
 	"dependencies": {
-		"@hyperupcall/config-utils": "^0.5.0"
+		"@hyperupcall/config-utils": "^0.5.0",
+		"prettier-plugin-pkg": "^0.21.2"
 	},
 	"devDependencies": {
 		"@hyperupcall/scripts-nodejs": "0.9.0",
 		"@types/node": "^25.0.6",
-		"prettier": "^3.7.4",
-		"prettier-plugin-pkg": "^0.21.2",
+		"prettier": "^3.9.10",
 		"typescript": "^5.9.3"
 	},
 	"markdownlint-cli2": {
