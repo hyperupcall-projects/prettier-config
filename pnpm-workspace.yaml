@@ -1,4 +1,7 @@
 allowBuilds:
   unrs-resolver: true
+minimumReleaseAgeExclude:
+  - '@hyperupcall/prettier-config@0.12.0'
+  - '@hyperupcall/scripts-nodejs@0.12.0'
 publicHoistPattern:
   - 'prettier'
