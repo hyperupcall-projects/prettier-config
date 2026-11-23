@@ -24,9 +24,7 @@
 		"./package.json": "./package.json"
 	},
 	"scripts": {
-		"format": "prettier --check --ignore-unknown .",
-		"format:fix": "prettier --write --ignore-unknown .",
-		"format:lefthook": "prettier --write --ignore-unknown",
+		"format": "hyperupcall-scripts-nodejs format",
 		"lint": "hyperupcall-scripts-nodejs lint",
 		"typecheck": "tsc --project ./jsconfig.json"
 	},
@@ -35,7 +33,7 @@
 		"prettier-plugin-pkg": "^0.22.1"
 	},
 	"devDependencies": {
-		"@hyperupcall/scripts-nodejs": "0.15.1",
+		"@hyperupcall/scripts-nodejs": "0.17.0",
 		"@types/node": "^26.6.6",
 		"prettier": "^3.9.10",
 		"typescript": "^7.0.2"
@@ -44,7 +42,7 @@
 		"extends": "./node_modules/@hyperupcall/scripts-nodejs/.markdownlint.mjs"
 	},
 	"npmpackagejsonlint": {
-		"extends": "@hyperupcall/scripts-nodejs/npmpackagejsonlint.config.js"
+		"extends": "@hyperupcall/scripts-nodejs/config-npmpackagejsonlint.js"
 	},
-	"prettier": "./index.js"
+	"prettier": "@hyperupcall/scripts-nodejs/config-prettier.js"
 }

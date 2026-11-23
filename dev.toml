@@ -1,3 +1,2 @@
 [rules]
-'nodejs/prettier/package-json-must-have-correct-shape' = "off"
-'nodejs/prettier/prettier-must-not-have-dependencies' = "off"
+"nodejs/prettier/prettier-must-not-have-dependencies" = "off"
