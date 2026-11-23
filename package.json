@@ -13,7 +13,7 @@
 	"author": "Edwin Kofler <edwin@kofler.dev> (https://edwinkofler.com)",
 	"license": "MPL-2.0",
 	"private": false,
-	"packageManager": "pnpm@12.16.1",
+	"packageManager": "pnpm@12.23.0",
 	"main": "./index.js",
 	"types": "./index.d.ts",
 	"exports": {
@@ -35,13 +35,16 @@
 		"prettier-plugin-pkg": "^0.22.1"
 	},
 	"devDependencies": {
-		"@hyperupcall/scripts-nodejs": "0.12.0",
+		"@hyperupcall/scripts-nodejs": "0.15.1",
 		"@types/node": "^26.6.6",
 		"prettier": "^3.9.10",
 		"typescript": "^7.0.2"
 	},
 	"markdownlint-cli2": {
-		"extends": "./node_modules/@hyperupcall/markdownlint-config/.markdownlint.json"
+		"extends": "./node_modules/@hyperupcall/scripts-nodejs/.markdownlint.mjs"
+	},
+	"npmpackagejsonlint": {
+		"extends": "@hyperupcall/scripts-nodejs/npmpackagejsonlint.config.js"
 	},
 	"prettier": "./index.js"
 }
